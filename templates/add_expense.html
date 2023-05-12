@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Add Expense</h2>
+<form method="post">
+    {% csrf_token %}
+    <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" id="title" name="title" required>
+    </div>
+    <div class="form-group">
+        <label for="amount">Amount</label>
+        <input type="number" class="form-control" id="amount" name="amount" step="0.01" required>
+    </div>
+    <div class="form-group">
+        <label for="category">Category</label>
+        <input type="text" class="form-control" id="category" name="category" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Add Expense</button>
+</form>
+{% endblock %}
