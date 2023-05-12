@@ -11,4 +11,9 @@
   8.1. Create the add_expense.html, expense_list.html, login.html, and base.html templates in the expenses/templates directory.<br> 
   8.2. Create a static directory in the project root and add necessary CSS and JS files<br> 
 
-
+<h2> Run the development server:<br></h2>
+Run the following command: python manage.py runserver<br>
+Visit http://localhost:8000/expense-list/ in your web browser to see the expense list.<br>
+Visit http://localhost:8000/add-expense/ to add new expenses.<br>
+Visit http://localhost:8000/login/ to access the login page.<br>
+Please make sure to properly configure the static file handling and adjust the database settings according to your needs.<br>
